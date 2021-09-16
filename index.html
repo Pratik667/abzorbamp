@@ -1,0 +1,911 @@
+<!doctype html>
+<html ⚡>
+    <head>
+        <meta charset="utf-8">
+        <title>Abzorb - Home</title>
+        <link rel="canonical" href="index.html">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-mega-menu" src="https://cdn.ampproject.org/v0/amp-mega-menu-0.1.js"></script>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+        <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+        <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+        <style amp-custom>
+        body{font-family: 'Noto Sans JP', sans-serif;}
+        .sidebar-open-btn {
+            font-size: 2em;
+            display: none;
+        }
+        @media (max-width: 768px) {
+            #mega-menu {
+            display: none;
+            }
+            .sidebar-open-btn {
+            display: block;
+            }
+        }
+        .navbar{
+            list-style: none;
+        }
+        .navbar li{
+            padding: 1rem;
+        }
+        .navbar.mb li{
+            padding: 0.5rem;
+        }
+        .navbar.mb{
+            padding: 2rem;      
+        }
+        .navbar a{
+            text-decoration: none;  
+            color:#fff;   
+            text-transform: capitalize; 
+        }
+        #sidebar, #mega-menu,#mega-menu nav,header{
+            background-color: #1d3269;     
+        } 
+        @media (max-width: 500px) {
+            header{
+                padding: 15px 15px 10px 15px;
+            }
+            .sidebar-open-btn {
+                display: block;
+                background: #d6d8de;
+                border: 0;
+                color: #1d3269;
+            }
+        }
+        #mega-menu{
+            padding: 20px 0;
+        }
+        .brand-logo .logo-img{
+            width: 120px;
+            height: 50px;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+        }
+        
+        @media only screen and (max-width:600px) {        
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;            
+            }
+        }
+        @media only screen and (min-width:768px) {
+            header{
+                display: flex;
+                align-items: center;
+                justify-content:space-around;
+            }
+            #mega-menu{
+                order:2;
+            }
+            .brand .mb-logo{
+                order:1;
+            }
+            .brand-logo .logo-img {
+                width: 160px;
+                height: 40px;
+            }
+        }
+        .navbar li.discount-btn{
+            background-color: #fff;
+            padding: 3px 8px;
+            border-radius: 20px;
+            margin-left:10px;
+        }
+        @media only screen and (max-width:600px) {
+            .navbar li.discount-btn{            
+                margin-left:0;
+                margin-top:10px;
+            }
+        }
+        .navbar li.discount-btn a{
+            color:red;
+        }
+        .container{
+      width: 84%;    
+      margin: 0 auto;
+    }
+    @media only screen and (max-width:600px) {
+      .container{
+        width:100%;
+      }
+    }
+    .footer-section{
+        background-color: #000;
+        padding:1rem;
+        color:#fff;
+    }
+    .followus{
+        display:flex;       
+        justify-content: center; 
+    }
+    .followus ul{
+        list-style:none;   
+        padding-left:0    
+    }
+    .followus ul li{
+        display: inline-flex;      
+        padding:0 0 0 16px;  
+    }
+    .followus ul li a i{
+        color:#fff;
+    }
+    .copyright{
+        text-align:center;        
+    }
+    .footer-section .footer-menu .footer-logo .logo-img{
+        height:40px;
+        width:120px;
+        margin-top: 1rem;
+    }
+    .footer-section .footer-menu{
+        display:flex;
+    }
+    .footer-section .footer-menu .footer-logo{
+        display: flex;
+        flex: 0 0 20%;
+        justify-content: center;
+    }
+    .footer-section .footer-menu .footer-menu-list{
+        display: flex;
+        flex: 0 0 20%;
+        justify-content: start;
+    }
+    .footer-section .footer-menu .signup{
+        display: flex;
+        flex: 0 0 40%;
+        justify-content: start;
+        flex-direction: column;
+    }
+    .footer-section .footer-menu .signup h3{margin-bottom:0;}
+    .footer-section .footer-menu .footer-menu-list .menu-list{
+        list-style:none;
+    }
+    .footer-section .footer-menu .footer-menu-list .menu-list li{        
+        margin-bottom:7px;
+    }
+    .footer-section .footer-menu .footer-menu-list .menu-list li a{        
+        color: #fff;
+        text-decoration: none;
+    }
+    @media (max-width: 768px) {
+        .footer-section .footer-menu {
+            display: flex;
+            flex-direction: column;
+        }
+        .footer-section .footer-menu .signup{
+                padding: 1rem 0;
+    }
+        .footer-section .footer-menu .footer-menu-list .menu-list{
+            padding:0;
+        }
+    }
+    .section-first{
+        background-color:#18306f;
+        padding:1rem;
+    }
+    .section-first .container{
+        text-align:center;
+        margin-top:1.5rem;
+    }
+    .section-first h3{
+        font-weight: 700;
+        color:#fff;
+        margin:7px 0;
+        font-size: 28px;
+    }
+    .section-first h4{
+        font-weight: 500;
+        color:#fff;
+        margin:12px 0;
+        font-size: 18px;
+    }
+    .row{
+        display:flex;
+    }
+    @media (max-width: 768px) {
+        .row{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+
+    }
+    .card-of-three{
+        flex:0 0 33.33%;
+        width:33.33%;
+    }
+    .card-of-half{
+        flex:0 0 50%;
+        width:50%;
+    }
+    .card-of-two{
+        flex:0 0 66.66%;
+        width:66.66%;
+    }
+
+    @media (max-width: 768px) {
+        .card-of-three{
+            flex:0 0 100%;
+            width:100%;
+        }
+        .card-of-two{
+            flex:0 0 100%;
+            width:100%;
+        }
+    }
+    .section-first .row{
+        margin-top:5rem;
+        margin-bottom:3rem;
+    }
+    .section-first .card-of-three{
+        display: flex;
+        flex-direction: column;       
+        align-items: center;
+    }
+    .section-first .card-of-three .card{
+        width:fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-first .card-of-three .img-cover{
+        width: fit-content;
+        background: #fff;
+        padding: 2rem;
+        border: 1px solid #fff;
+    }
+    .section-first .card-of-three .card-body{
+        background-color: #1b6aaf;
+        padding: 0.5rem 1rem;
+        width: 200px;
+        border-radius: 20px;
+        transform: translate(0px, -10px);
+    }
+    .section-first .card-of-three .card-body h4{
+        font-weight: 700;    
+        font-size: 16px;
+        margin-top:0;
+    }
+    .section-first .card-of-three .card-body p{
+        font-size:11.5px; 
+        color:#fff;
+    }
+    .section-first .card-of-three .card-img{
+        height: 180px;
+        width: 180px;
+    }
+    .section-second{
+        background-color:#2357a2;
+        padding:4rem 1rem 1rem 1rem;       
+    }
+    .section-third{
+        background-color:#2357a2;
+        padding:2rem 1rem 1rem 1rem;       
+    }
+    .section-fourth{
+        background-color:#2357a2;
+        padding:2rem 1rem 1rem 1rem;      
+    }
+    .section-sixth{
+        background-color:#1a2f68;
+        padding:2rem 1rem 1rem 1rem;   
+        color: #fff;   
+    }
+    .section-seventh{
+        background-color:#1a2f68;
+        padding:2rem 1rem 1rem 1rem;   
+        color: #fff;  
+    }
+    .section-eight{
+        background-color:#1a2f68;
+        padding:2rem 1rem 1rem 1rem;   
+        color: #fff;  
+    }
+    .section-second .prd-img{
+        width: 360px;
+    }
+    .section-third .prd-img{
+        width: 463px;
+        height: 362px;
+    }
+    
+    @media (max-width: 768px) {
+        .section-second .prd-img{
+        width: auto;
+    }
+    .section-third .prd-img{
+        width: auto;
+    }
+    }
+    .banner-btn-light{
+        padding: 10px 15px;
+        background-color: #fff;
+        text-decoration: none;
+        color: #18306f;
+        border-radius: 30px;
+        font-weight: 900;
+        margin:0 25px;
+    }
+    @media (max-width: 768px) {
+        .banner-btn-light{
+            margin:0 5px;
+        }
+    }
+    .section-second .card-of-two .heading,.section-third .card-of-two .heading,.section-fourth .card-of-half .heading{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .section-second .card-of-two .heading .logo-img,.section-third .card-of-two .heading .logo-img,.section-fourth .card-of-half .heading .logo-img{
+        width: auto;
+        height: 45px;
+    }
+    .section-second .card-of-two .heading .logo-img .logo-img-amp,.section-third .card-of-two .heading .logo-img .logo-img-amp,.section-fourth .card-of-half .heading .logo-img .logo-img-amp{
+        width:150px;
+        height:45px;
+    }
+    .section-second .card-of-two .para,.section-third .card-of-two .para{
+        letter-spacing: 1px;
+        text-align: start;
+        color: #fff;
+        font-size: 15px;
+        line-height: 21px;
+        font-weight: 300;
+        margin: 1.5rem 2.2rem 1.5rem 0;
+    }
+    .hr-thin-white{
+        height: 0px;
+        border: none;
+        border-top: 0.5px solid rgba(255,255,255,0.5);
+        margin:1rem 0;
+    }
+    .section-second .card-of-two .content,.section-third .card-of-two .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .img-card {
+        width: 50%;
+        flex: 0 0 50%;
+        display: flex;
+        margin: 1rem 0 0 0;
+    }
+    @media (max-width: 768px) {
+        .img-card {
+            width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+    .img-card .logo-img-amp{
+        width: 122px;
+        height: 100px;
+    }
+    .img-card .card-content{
+        padding:0 10px;
+        width: fit-content;
+    }
+    .img-card .card-content h3{
+        margin:0 0 0.5rem 0;
+        color:#fff;
+        text-transform: uppercase;
+    }
+    .img-card .card-content p{
+        margin: 0 0 0.5rem 0;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .content-footer {
+        margin: 4rem 0;
+        display: flex;
+        flex-direction: column;
+        height: 3.5rem;
+    }
+    .buy-btn {
+        padding: 10px 35px;
+        background-color: #ea232a;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 30px;
+        font-weight: 900;
+        margin: 0 25px 0 0;
+        text-transform: capitalize;
+    }
+    @media (max-width: 768px) {
+        .buy-btn {       
+            margin: 0 10px 0 0;
+        }
+    }
+    .unlock-link{
+        color: #fff;
+        text-transform: capitalize;
+    }
+    .content-footer .footer-links,.content-footer .footer-disclaimer{
+        width:100%;
+        flex:0 0 100%;
+    }
+    .footer-disclaimer small{
+        color: rgba(255,255,255,0.5);
+        font-weight: 100;
+        font-size: 9.5px;
+        letter-spacing: 1px;
+    }
+    .section-third .card-of-three{
+        display: flex;
+        align-items: center;
+    }
+    .section-fourth .section-heading{
+        text-align: center;
+        width: fit-content;
+        font-size: 46px;
+        color: #fff;
+        border: 3px dashed #fff;
+        padding: 5px 15px;
+        text-transform: capitalize;
+        margin: 46px auto;
+    }
+    .section-fourth .section-subheading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section-fourth .section-subheading .logo-img{
+        width:100px;
+        height:100px;
+    }
+    .section-fourth .section-subheading h4{
+        text-align: center;
+        margin: 5px 1rem 1rem 1rem;
+        font-size: 26px;
+        color: #fff;
+        padding: 5px 15px;
+        text-transform: capitalize;
+        width: 200px;
+    }
+    .section-fourth .section-subheading .row{
+        margin-top:3rem;
+    }
+    .section-fourth .card-of-half .prd-img{
+        width:277px;
+        height:417px;
+        margin:0 auto;
+    }
+    .section-fourth .card-of-half .prd-img2{
+        width:463px;
+        height:362px;
+        margin:0 auto;
+    }
+    .section-fourth .card-of-half .heading{
+        margin: 2rem auto;
+        justify-content: center;
+    }
+    .section-fourth .card-of-half:first-child{
+        border-right: 1px dashed white;
+    }
+    .section-fourth .card-of-half .content-footer{
+        width: 75%;
+        margin: 4rem auto;
+    }
+    .section-fourth .card-of-half .footer-links,.section-fourth .card-of-half .footer-disclaimer{
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    .section-sixth .container{
+        text-align:center;
+    }
+    .section-sixth .container h4{
+        font-size:20px;
+        margin-bottom:0;
+    }
+    .section-sixth .container h3{
+        font-size:32px;
+        margin-bottom:0;
+        margin-top:10px;
+    }
+    .section-sixth .abzorb-ad{
+        width: 412px;
+        height: 308px;
+        margin:2rem auto;
+    }
+    @media (max-width: 768px) {
+        .section-sixth .abzorb-ad{
+            width: 100%;
+            height: auto;
+            margin:2rem auto;
+        }
+    }
+    .section-seventh .container h3{
+        font-size:22px;
+        text-align:center;
+    }
+    .section-seventh .container .faq-button{
+        display: flex;
+        justify-content: center;
+    }
+    .section-seventh .container .btn-faq{
+        margin:0.5rem 1rem;
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #000;
+        padding:5px 0.5rem;
+        font-size: 14px;
+        font-weight:500;
+        background-color:#fff;
+        border-radius:10px;
+    }
+    .section-seventh .container .faq-accordion h3{
+        background-color: #1b6aaf;
+        color:#fff;
+        border:0;
+        margin:1rem 0 0 0;
+        font-size:16px;
+        padding:1rem;
+        text-align:left;
+    }
+    .section-seventh .container .faq-accordion p{
+        padding:1rem;
+        text-align:left;
+        color: #1b6aaf;
+        background-color:#fff;
+    }
+        </style>
+
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    </head>
+
+    <body>
+        <header> 
+            <amp-mega-menu id="mega-menu" height="50" layout="fixed-height">
+              <nav>         
+                <ul class='navbar'>
+                 
+                  <!-- list of menu items here -->
+                  <li><a href="#">Benifits</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Video</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li class="discount-btn"><a href="#" >Unlock Discount</a></li>            
+                </ul>
+              </nav>
+            </amp-mega-menu>
+            <button class="sidebar-open-btn" on="tap:sidebar">=</button>
+            <div class="brand mb-logo">
+              <span class="brand-logo">
+                  <amp-img src="assets/logoblue.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-img"></amp-img>
+              </span>           
+            </div>
+          </header>
+          <amp-sidebar id="sidebar" layout="nodisplay">
+           
+              <!-- list of menu items here -->
+              <nav>
+                <ul class='navbar mb'>
+                 
+                    <li><a href="#">Benifits</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Video</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li class="discount-btn"><a href="#">Unlock Discount</a></li>           
+                </ul>
+              </nav>
+           
+          </amp-sidebar>
+          <main>
+            <amp-carousel width="1366" height="576" layout="responsive" type="slides" autoplay delay="2000"  role="region" aria-label="Carousel with autoplay">
+                <amp-img src="assets/slider1.jpg"  width="1366" height="576" layout="responsive" alt="a sample image"></amp-img>
+                <amp-img src="assets/slider1.jpg"  width="1366" height="576" layout="responsive" alt="a sample image"></amp-img>
+                <amp-img src="assets/slider1.jpg"  width="1366" height="576" layout="responsive" alt="a sample image"></amp-img>
+                <amp-img src="assets/slider1.jpg"  width="1366" height="576"  layout="responsive" alt="a sample image"></amp-img>
+
+              </amp-carousel>
+              <section class="section-first">
+                   
+                    <div class="container">
+                        <h3>Stay itch-free, all day, every day</h3>
+                        <h4>Long lasting relief from Rashes and fungal infections</h4>
+                        <div class="row">
+                            <div class="card-of-three">
+                                <div class="card">
+                                    <div class="img-cover"><amp-img alt="A view of the sea" src="assets/b1.png" width="175" height="175" layout="responsive" class="card-img"></amp-img></div>
+                                    <div class="card-body">
+                                            <h4>Itch Free</h4>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="card-of-three">
+                                <div class="card">
+                                    <div class="img-cover"><amp-img alt="A view of the sea" src="assets/b2.png" width="175" height="175" layout="responsive" class="card-img"></amp-img></div>
+                                    <div class="card-body">
+                                            <h4>Fungal Infection</h4>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-of-three">
+                                <div class="card">
+                                    <div class="img-cover"><amp-img alt="A view of the sea" src="assets/b3.png" width="175" height="175" layout="responsive" class="card-img"></amp-img></div>
+                                    <div class="card-body">
+                                            <h4>Redness</h4>
+                                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+              </section>
+              <section class="section-second">
+                    <div class="container">
+                        <div class="row">
+                            <div class="card-of-three">
+                                <amp-img alt="A view of the sea" src="assets/prd1.png" width="277" height="417" layout="responsive" class="prd-img"></amp-img>
+                            </div>
+                            <div class="card-of-two">
+                                    <div class="heading">
+                                        <div class="logo-img"><amp-img src="assets/logoblue.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-img-amp"></amp-img></div>
+                                        <a href="#" class="banner-btn-light">Dusting Powder</a>
+                                    </div>
+                                    <p class="para">
+                                        Abzorb dusting powder with clotrimazole protects the skin against various fungal infections such as athlete's foot, jack itch, and excessive sweating. It's 2x sweat control formula prevents excessive sweating and masks any odor.
+                                    </p>
+                                    <hr class="hr-thin-white"/>
+                                    <div class="content">
+                                        <div class="img-card">
+                                            <amp-img src="assets/c1.png" layout="responsive" width="55.87765957446808" height="55" alt="Absord Excess Sweat" class="logo-img-amp"></amp-img>
+                                            <div class="card-content">
+                                                <h3>Absorbs Excess Sweat</h3>
+                                                <p>A combination of talc and starch when appplied to the body absorbs sweat and moisture and releases a fragrance to keep you sweat free and smelling good.</p>
+                                            </div>
+                                        </div>
+                                        <div class="img-card">
+                                            <amp-img src="assets/c2.png" layout="responsive" width="55.87765957446808" height="55" alt="Treats Fungal Infextion" class="logo-img-amp"></amp-img>
+                                            <div class="card-content">
+                                                <h3>Treats Fungal Infection</h3>
+                                                <p>Abzorb during powder with clortimazole controls itching and prevents fungal infection in intimate areas, inner thigs, waistline & feet.</p>
+                                            </div>
+                                        </div>
+                                        <div class="img-card">
+                                            <amp-img src="assets/c3.png" layout="responsive" width="55.87765957446808" height="55" alt="Stops Recurrence" class="logo-img-amp"></amp-img>
+                                            <div class="card-content">
+                                                <h3>Stops Recurrence</h3>
+                                                <p>It offers relief from burning, itching and cracking of the skin caused due to fungal infections, and its 2x formula prevents recurrence*</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-footer">
+                                        <div class="footer-links">
+                                            <a href="#" class="buy-btn">Buy now</a>
+                                            <a href="#" class="unlock-link">Unlock Coupon Code</a>
+                                        </div>
+                                        <div class="footer-disclaimer">
+                                            <small>(*Disclaimer: 2x Sweat control formula with unique combination of Talc and Starch prevents recurrence and absorbs sweat)</small>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+              </section>
+            <section class="section-third">
+                    <div class="container">
+                        <div class="row">                       
+                            <div class="card-of-two">
+                                    <div class="heading">
+                                        <div class="logo-img"><amp-img src="assets/logot.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-img-amp"></amp-img></div>
+                                        <a href="#" class="banner-btn-light">Antifungal Cream</a>
+                                    </div>
+                                    <p class="para">
+                                        Abzorb dusting powder with clotrimazole protects the skin against various fungal infections such as athlete's foot, jack itch, and excessive sweating. It's 2x sweat control formula prevents excessive sweating and masks any odor.
+                                    </p>
+                                    <hr class="hr-thin-white"/>
+                                    <div class="content">
+                                        <div class="img-card">
+                                            <amp-img src="assets/c4.png" layout="responsive" width="55.87765957446808" height="55" alt="Absord Excess Sweat" class="logo-img-amp"></amp-img>
+                                            <div class="card-content">
+                                                <h3>Absorbs Excess Sweat</h3>
+                                                <p>A combination of talc and starch when appplied to the body absorbs sweat and moisture and releases a fragrance to keep you sweat free and smelling good.</p>
+                                            </div>
+                                        </div>
+                                        <div class="img-card">
+                                            <amp-img src="assets/c5.png" layout="responsive" width="55.87765957446808" height="55" alt="Treats Fungal Infextion" class="logo-img-amp"></amp-img>
+                                            <div class="card-content">
+                                                <h3>Treats Fungal Infection</h3>
+                                                <p>Abzorb during powder with clortimazole controls itching and prevents fungal infection in intimate areas, inner thigs, waistline & feet.</p>
+                                            </div>
+                                        </div>
+                                        <div class="img-card">
+                                            <amp-img src="assets/c3.png" layout="responsive" width="55.87765957446808" height="55" alt="Stops Recurrence" class="logo-img-amp"></amp-img>
+                                            <div class="card-content">
+                                                <h3>Stops Recurrence</h3>
+                                                <p>It offers relief from burning, itching and cracking of the skin caused due to fungal infections, and its 2x formula prevents recurrence*</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="content-footer">
+                                        <div class="footer-links">
+                                            <a href="#" class="buy-btn">Buy now</a>
+                                            <a href="#" class="unlock-link">Unlock Coupon Code</a>
+                                        </div>
+                                        <div class="footer-disclaimer">
+                                            <small>(*Disclaimer: 2x Sweat control formula with unique combination of Talc and Starch prevents recurrence and absorbs sweat)</small>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="card-of-three">
+                                
+                                <amp-img alt="A view of the sea" src="assets/prd2.png" width="277" height="417" layout="responsive" class="prd-img"></amp-img>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <section class="section-fourth">
+                <div class="container">
+                    <h3 class="section-heading">Trusted by Experts</h3>
+                    <div class="section-subheading">
+                        <amp-img src="assets/first.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-img"></amp-img>
+                        <h4>
+                            Choice of <br/>Skin Specialist*
+                        </h4>
+                    </div>
+                   
+                    <div class="row">
+                        <div class="card-of-half">
+                            <div class="heading">
+                                <div class="logo-img"><amp-img src="assets/logoblue.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-img-amp"></amp-img></div>
+                                <a href="#" class="banner-btn-light">Dusting Powder</a>
+                            </div>
+                            <amp-img alt="A view of the sea" src="assets/prd1.png" width="277" height="417" layout="responsive" class="prd-img"></amp-img>
+                            <div class="content-footer">
+                                <div class="footer-links">
+                                    <a href="#" class="buy-btn">Buy now</a>
+                                </div>
+                                <div class="footer-disclaimer">
+                                    <small>(*Disclaimer: 2x Sweat control formula with unique combination of Talc and Starch prevents recurrence and absorbs sweat)</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-of-half">
+                            <div class="heading">
+                                <div class="logo-img"><amp-img src="assets/logot.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-img-amp"></amp-img></div>
+                                <a href="#" class="banner-btn-light">Antifungal Cream</a>
+                            </div> 
+                            <amp-img alt="A view of the sea" src="assets/prd2.png" width="277" height="417" layout="responsive" class="prd-img2"></amp-img>
+                            <div class="content-footer">
+                                <div class="footer-links">
+                                    <a href="#" class="buy-btn">Buy now</a>
+                                </div>
+                                <div class="footer-disclaimer">
+                                    <small>(*Disclaimer: 2x Sweat control formula with unique combination of Talc and Starch prevents recurrence and absorbs sweat)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-sixth">
+                <div class="container">
+                    <h4>Discover the benifits of Abzorb products,</h4>
+                    <h3>1st choice of skin Specialists</h3>
+                    <amp-video controls width="640" height="360" layout="responsive" class="abzorb-ad" poster="assets/itch.jpg">
+                    <source src="assets/videoplayback.mp4" type="video/mp4" />
+                    <div fallback>
+                        <p>This browser does not support the video element.</p>
+                    </div>
+                    </amp-video>
+                </div>
+               
+            </section>
+            <section class="section-seventh">
+                <div class="container">
+                    <h3>FAQs</h3>
+                    <div class="faq-button">
+                            <a href="#" class="btn-faq">Abzorb Dusting Powder</a>
+                            <a href="#" class="btn-faq">Abzorb T Antifungal Cream</a>
+                    </div>
+                    <amp-accordion expand-single-section class="faq-accordion">
+                        <section>
+                          <h3>What is Abzorb T Antifungal Cream?</h3>
+                          <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+                        </section>
+                        <section>
+                          <h3>How to use Abzorb T AntiFungal Cream?</h3>
+                          <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+                        </section>
+                        <section>
+                          <h3>When will Abzorb T Antifungal Cream start showing its result?</h3>
+                          <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+                        </section>
+                        <section>
+                            <h3>Is this suitable for kids?</h3>
+                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+                        </section>
+                          <section>
+                            <h3>When can I stop applying the product?</h3>
+                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+                        </section>
+                          <section>
+                            <h3>Is this is a good cream for jack's itch?</h3>
+                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+                        </section>
+                          <section>
+                            <h3>Do i need prescription to buy Abzorb T antifungal cream?</h3>
+                            <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available.</p>
+                        </section>
+                      </amp-accordion>
+                </div>
+            </section>
+            <section class="section-eight"></section>
+            <section class="section-nine"></section>
+          </main>
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-menu">
+                    <div class="footer-logo"><amp-img src="assets/logo.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-img"></amp-img></div>
+                    <div class="signup">
+                        <h3>Sign up for free</h3>
+                        <p>Catch up on the latest updates, news and much more.</p>
+                        <div class="form-field">
+                            <input type="text" name="subscribe" />
+                            <button class="subscribe-btn">Subscribe</button>
+                        </div>
+                    </div>
+                    <div class="footer-menu-list">
+                        <ul class='menu-list'>                 
+                            <!-- list of menu items here -->
+                            <li><a href="#">Benifits</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Video</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Testimonials</a></li>                                   
+                          </ul>
+                    </div>
+                    <div class="footer-menu-list">  
+                        <ul class='menu-list'>                 
+                            <!-- list of menu items here -->
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                                                 
+                        </ul>
+                    </div>
+                </div>
+                <div class="followus">
+                    <p>Follow Us</p>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                    </ul>
+                </div>
+                <hr />
+                <div class="copyright">
+                    <p>Copyright © 2021 Sun Pharma | All Rights Reserved</p>
+                </div>
+            </div>
+            
+        </footer>
+    </body>
+</html>
