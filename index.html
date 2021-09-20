@@ -268,7 +268,10 @@
         width: fit-content;
         background: #fff;
         padding: 2rem;
+        margin-bottom: -1.2rem;
         border: 1px solid #fff;
+        -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+        clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
     }
     .section-first .card-of-three .card-body{
         background-color: #1b6aaf;
@@ -312,7 +315,7 @@
         padding:2rem 1rem 1rem 1rem;   
         color: #fff;  
     }
-    .section-eight{
+    .testimonial{
         background-color:#1a2f68;
         padding:2rem 1rem 1rem 1rem;   
         color: #fff;  
@@ -566,6 +569,20 @@
         text-align:left;
         color: #1b6aaf;
         background-color:#fff;
+    }
+    .testimonial-content {
+        width: 75%;
+        font-size: 12px;
+        text-align: center;
+        background: #1b6aaf;
+        padding: 1rem;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+    .testimonial .container h3{
+        font-size:22px;
+        text-align:center;
+        margin-bottom:2rem;
     }
         </style>
 
@@ -857,7 +874,34 @@
                       </amp-accordion>
                 </div>
             </section>
-            <section class="section-eight"></section>
+            <section class="testimonial">
+                <div class="container">
+                   <h3>Consumer Speak</h3>
+                    <amp-carousel width="1366" height="576" layout="responsive" type="slides"  delay="2000"  role="region" aria-label="Carousel ">
+                        <!-- <amp-img src="https://raw.githubusercontent.com/Pratik667/abzorbamp/development/assets/slider1.jpg"  width="1366" height="576" layout="responsive" alt="a sample image"></amp-img>
+                        <amp-img src="https://raw.githubusercontent.com/Pratik667/abzorbamp/development/assets/slider1.jpg"  width="1366" height="576" layout="responsive" alt="a sample image"></amp-img>
+                        <amp-img src="https://raw.githubusercontent.com/Pratik667/abzorbamp/development/assets/slider1.jpg"  width="1366" height="576" layout="responsive" alt="a sample image"></amp-img>
+                        <amp-img src="https://raw.githubusercontent.com/Pratik667/abzorbamp/development/assets/slider1.jpg"  width="1366" height="576"  layout="responsive" alt="a sample image"></amp-img> -->
+                            <div class="slider">
+                                <div class="testimonial-content">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                                <div class="user">
+                                    <div class="img-card">
+                                        <amp-img src="assets/john-doe.jpg"  width="340" height="340" layout="responsive" alt="a sample image"></amp-img>
+                                    </div>
+                                    <div class="title-name">
+                                        <h4>Raghupati Raghav</h4>
+                                        <h6>User</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider">dsdsds</div>
+                            <div class="slider">dsdsds</div>
+                            <div class="slider">dsdsds</div>
+                      </amp-carousel>
+                </div>
+            </section>
             <section class="section-nine"></section>
           </main>
         <footer class="footer-section">
