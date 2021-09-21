@@ -113,8 +113,13 @@
                 margin-top:10px;
             }
         }
-        .navbar li.discount-btn a{
+        .navbar li.discount-btn button{
             color:red;
+            border:0;
+            background-color:transparent;
+            vertical-align: text-top;
+    margin-top: 4px;
+            font-weight:600;
         }
         .container{
       width: 84%;    
@@ -663,6 +668,41 @@
     }
 
     }
+    .discount-box {
+    background: #1d3269;
+    color:#fff;
+    width: 300px;
+    text-align: center;
+    padding: 0.5rem;
+    height: fit-content;
+    margin-left: 70%;
+    margin-top:5.7rem;
+    border-radius:10px;
+}
+.i-amphtml-fill-content{
+    height:auto;
+}
+.discount-box .form-group{
+    width:80%;
+    padding:1rem;
+    background-color: #fff;
+    color: #707070;
+    margin:0.4rem 0;
+    border-radius: 15px;
+    border: 0;
+}
+.discount-box .select.form-group{
+    width:90%;
+    
+}
+.discount-box .form-btn{
+    background-color: #fe0000;
+    color:#fff;
+    border:0;
+    margin:1rem 0;
+    border-radius: 10px;
+    padding:0.5rem;
+}
         </style>
 
         <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -680,7 +720,11 @@
                   <li><a href="#">Video</a></li>
                   <li><a href="#">FAQs</a></li>
                   <li><a href="#">Testimonials</a></li>
-                  <li class="discount-btn"><a href="#" >Unlock Discount</a></li>            
+                  <li class="discount-btn">
+                    <button on="tap:quote-lb">Unlock Discount</button>
+                    </li> 
+                  
+           
                 </ul>
               </nav>
             </amp-mega-menu>
@@ -702,7 +746,9 @@
                     <li><a href="#">Video</a></li>
                     <li><a href="#">FAQs</a></li>
                     <li><a href="#">Testimonials</a></li>
-                    <li class="discount-btn"><a href="#">Unlock Discount</a></li>           
+                    <li class="discount-btn">
+                        <button on="tap:quote-lb">Unlock Discount</button>
+                        </li>          
                 </ul>
               </nav>
            
@@ -1062,5 +1108,29 @@
             </div>
             
         </footer>
+        <amp-lightbox id="quote-lb" class="discount-box" layout="nodisplay">
+            <h4>Unlock your coupon code Today!</h4>
+            <h5>Get 10% discount on your purchase</h5>
+            <form class="sample-form" method="post" action-xhr="/documentation/examples/api/submit-form-input-text-xhr" target="_top">
+                <select name="select_product" class="select form-group" id="select_product">
+                    <option value="powder">Dusting Powder</option>
+                    <option value="cream">Fungal Cream</option>                  
+                </select>
+                <input type="text" name="name" class="form-group"placeholder="Name..." required>
+                <input type="email" name="email" class="form-group" placeholder="Email..." required>
+                <input type="number" name="number" class="form-group" placeholder="Number..." required>
+                <input type="submit" class="form-btn" value="Subscribe">
+                <div submit-success>
+                  <template type="amp-mustache">
+                    Success! Thanks {{name}} for trying the <code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how <code>amp-form</code> handles errors.
+                  </template>
+                </div>
+                <div submit-error>
+                  <template type="amp-mustache">
+                    Error! Thanks {{name}} for trying the <code>amp-form</code> demo with an error response.
+                  </template>
+                </div>
+              </form>
+        </amp-lightbox>
     </body>
 </html>
