@@ -12,7 +12,7 @@
         <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
         <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
         <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
-
+        <script async custom-element="amp-lightbox" src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" type="text/css"/>
@@ -248,6 +248,12 @@
             flex:0 0 100%;
             width:100%;
         }
+        .card-of-half{
+        flex:0 0 100%;
+        width:100%;
+        border:0;
+        margin:0;
+    }
     }
     .section-first .row{
         margin-top:5rem;
@@ -257,6 +263,11 @@
         display: flex;
         flex-direction: column;       
         align-items: center;
+    }
+    @media (max-width: 768px) {
+        .section-first .card-of-three{
+            margin:1rem 0;
+        }
     }
     .section-first .card-of-three .card{
         width:fit-content;
@@ -327,14 +338,29 @@
         width: 463px;
         height: 362px;
     }
-    
     @media (max-width: 768px) {
         .section-second .prd-img{
-        width: auto;
+            width: 360px;
+        } 
+    
+         .section-third .prd-img{
+            width: 360px;
+        }
+        .section-third .card-of-three{
+            order:1;
+        }
+        .section-third .card-of-two{
+            order:2;
+        }
     }
-    .section-third .prd-img{
-        width: auto;
-    }
+    @media (max-width: 360px) {
+        .section-second .prd-img{
+            width: 300px;
+        } 
+    
+         .section-third .prd-img{
+            width: 300px;
+        }
     }
     .banner-btn-light{
         padding: 10px 15px;
@@ -496,12 +522,27 @@
         height:362px;
         margin:0 auto;
     }
+    @media (max-width: 414px) {
+        .section-fourth .card-of-half .prd-img2{
+            width:360px;
+        }
+    }
+    @media (max-width: 360px) {
+        .section-fourth .card-of-half .prd-img2{
+            width:300px;
+        }
+    }
     .section-fourth .card-of-half .heading{
         margin: 2rem auto;
         justify-content: center;
     }
     .section-fourth .card-of-half:first-child{
         border-right: 1px dashed white;
+    }
+    @media (max-width: 768px) {
+        .section-fourth .card-of-half:first-child{
+        border:0;
+    }
     }
     .section-fourth .card-of-half .content-footer{
         width: 75%;
@@ -583,6 +624,44 @@
         font-size:22px;
         text-align:center;
         margin-bottom:2rem;
+    }
+    .testimonial .logo-user-amp{
+        height: 55px;
+        width:55px;
+        margin:0 0.5rem;
+    }
+    .testimonial h4,.testimonial h6{
+        margin:0;
+        padding:0;
+    }
+    .testimonial .user{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin:1rem 0;
+    }
+    .testimonial .slider{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .testimonial-carousel{
+        height:276px;
+    }
+    @media (max-width: 768px) {
+        .testimonial-carousel{
+        height:400px;
+    }
+
+    }
+    @media (max-width: 360px) {
+        .testimonial-carousel{
+        height:500px;
+    }
+
     }
         </style>
 
@@ -877,28 +956,60 @@
             <section class="testimonial">
                 <div class="container">
                    <h3>Consumer Speak</h3>
-                    <amp-carousel width="1366" height="576" layout="responsive" type="slides"  delay="2000"  role="region" aria-label="Carousel ">
-                        <!-- <amp-img src="https://raw.githubusercontent.com/Pratik667/abzorbamp/development/assets/slider1.jpg"  width="1366" height="576" layout="responsive" alt="a sample image"></amp-img>
-                        <amp-img src="https://raw.githubusercontent.com/Pratik667/abzorbamp/development/assets/slider1.jpg"  width="1366" height="576" layout="responsive" alt="a sample image"></amp-img>
-                        <amp-img src="https://raw.githubusercontent.com/Pratik667/abzorbamp/development/assets/slider1.jpg"  width="1366" height="576" layout="responsive" alt="a sample image"></amp-img>
-                        <amp-img src="https://raw.githubusercontent.com/Pratik667/abzorbamp/development/assets/slider1.jpg"  width="1366" height="576"  layout="responsive" alt="a sample image"></amp-img> -->
+                    <amp-carousel width="1366" height="276" layout="responsive" type="slides" class="testimonial-carousel" delay="2000"  role="region" aria-label="Carousel ">
+                      
                             <div class="slider">
                                 <div class="testimonial-content">
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                 </div>
                                 <div class="user">
-                                    <div class="img-card">
-                                        <amp-img src="assets/john-doe.jpg"  width="340" height="340" layout="responsive" alt="a sample image"></amp-img>
-                                    </div>
-                                    <div class="title-name">
+                                    <amp-img src="assets/user.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-user-amp"></amp-img>
+                           
+                                    <div class="title-name">                                    
                                         <h4>Raghupati Raghav</h4>
                                         <h6>User</h6>
                                     </div>
                                 </div>
                             </div>
-                            <div class="slider">dsdsds</div>
-                            <div class="slider">dsdsds</div>
-                            <div class="slider">dsdsds</div>
+                            <div class="slider">
+                                <div class="testimonial-content">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                                <div class="user">
+                                    <amp-img src="assets/user.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-user-amp"></amp-img>
+                           
+                                    <div class="title-name">                                    
+                                        <h4>Raghupati Raghav</h4>
+                                        <h6>User</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="testimonial-content">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                                <div class="user">
+                                    <amp-img src="assets/user.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-user-amp"></amp-img>
+                           
+                                    <div class="title-name">                                    
+                                        <h4>Raghupati Raghav</h4>
+                                        <h6>User</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider">
+                                <div class="testimonial-content">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                </div>
+                                <div class="user">
+                                    <amp-img src="assets/user.png" layout="responsive" width="55.87765957446808" height="55" alt="a sample image" class="logo-user-amp"></amp-img>
+                           
+                                    <div class="title-name">                                    
+                                        <h4>Raghupati Raghav</h4>
+                                        <h6>User</h6>
+                                    </div>
+                                </div>
+                            </div>
                       </amp-carousel>
                 </div>
             </section>
